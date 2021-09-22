@@ -31,18 +31,22 @@ export const portfolioDatas = [
     content: `Learning, shariing, controlling robot and blogging are in one app that managned by Erobot team. 
     Mobile Developer team at Erobot built this, I am one of them. I implement UI and connecting app with API.`,
     technologyImages: [
-      "https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white",
-      "https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white",
+      "https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white",
+      "https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white",
+      // laravel
+      // "https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white",
+      // mysql
+      // "https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white",
     ],
     links: [
       {
-        src: "https://github.com/niptict-g6/juniorise",
+        src: "https://github.com/erobot-dev/erobot_mobile.git",
         title: "GitHub",
       },
-      {
-        src: "http://juniorise.herokuapp.com/",
-        title: "Website",
-      },
+      // {
+      //   src: "http://juniorise.herokuapp.com/",
+      //   title: "Website",
+      // },
     ],
     projectImages: [
       "https://res.cloudinary.com/khaysing/image/upload/v1632232008/photo%20gallery/b2rv18gcgl4zfwae31u6.png",
@@ -54,7 +58,7 @@ export const portfolioDatas = [
     content: `It is an stock managnment app that you can upload product in and out. You can track products transactions.
        This project is built with MySQL as the database and use PHP to query local database. 
        There are 3 members to do this project.
-       I design, impletemented and connected to localhost database.`,
+       I design, impletemented and connected to localhost database. Click Github to watch demo.`,
     technologyImages: [
       "https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white",
       "https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white",
