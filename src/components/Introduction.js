@@ -45,7 +45,7 @@ const Introduction = () => {
         </p>
       </StyledTextContainer>
       <StyledButtonContainer>
-        <a style={{ textDecoration: "none" }} href={introductionData.cvUrl}>
+        <a style={{ textDecoration: "none" }} href={introductionData.cvUrl} target={"_blank"}>
           <CustomButton>CV</CustomButton>
         </a>
       </StyledButtonContainer>

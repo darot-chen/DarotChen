@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import CustomButton from "./Button";
+import { motion } from 'framer-motion'
+
+import DynamicFaIcon from '../utils/getDynamicIcons'
 
 const Portfolio = ({
   title,
@@ -28,7 +30,20 @@ const Portfolio = ({
               rel="noreferrer"
               style={{ textDecoration: "none", marginRight: "1rem" }}
             >
-              <CustomButton>{url.title}</CustomButton>
+              <StyledButtonSkill
+                key={index}
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: 'spring', stiffness: 100 }}
+              >
+                <StyledIconGitHub>
+                  <DynamicFaIcon
+                    name={url.icon}
+                    size={'20'}
+                  // color={'#539E43'}
+                  />
+                </StyledIconGitHub>
+                {url.title}
+              </StyledButtonSkill>
             </a>
           ))}
         </StyledButtonContainer>
@@ -102,7 +117,7 @@ const StyledImageBorder = styled.div`
   padding: 0 10px;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: min(0.8vw, 10px);
+  gap: min(0.8vw, 4px);
   grid-auto-flow: row;
   overflow: hidden;
 `;
@@ -122,5 +137,17 @@ const StyledListTechnology = styled.div`
 const StyledTechnologyImage = styled.img`
   margin: 0.3rem 0.3rem 0 0;
 `;
+
+const StyledButtonSkill = styled(motion.button)`
+  display: flex;
+  padding: 0.75rem 1.25rem;
+`
+
+const StyledIconGitHub = styled.div`
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+  cursor: pointer;
+`
 
 export default Portfolio;

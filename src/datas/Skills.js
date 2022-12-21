@@ -1,5 +1,23 @@
 export const skillsData = [
   {
+    icon: 'FaLaptopCode',
+    text: 'Flutter',
+    size: '20',
+    color: '#42A5F5',
+  },
+  {
+    icon: 'FaCode',
+    text: 'Dart',
+    size: '20',
+    color: '#539E43',
+  },
+  {
+    icon: 'FaPython',
+    text: 'Python',
+    size: '20',
+    color: '#4584b6',
+  },
+  {
     icon: 'FaHtml5',
     text: 'HTML',
     size: '20',
@@ -16,18 +34,6 @@ export const skillsData = [
     text: 'Bootstrap',
     size: '20',
     color: '#7310EF',
-  },
-  {
-    icon: 'FaReact',
-    text: 'Flutter',
-    size: '20',
-    color: '#88dded',
-  },
-  {
-    icon: 'FaNode',
-    text: 'Dart',
-    size: '20',
-    color: '#539E43',
   },
   {
     icon: 'FaDatabase',

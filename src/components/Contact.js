@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import CustomButton from './Button'
+// import CustomButton from './Button'
 
 import DynamicFaIcon from '../utils/getDynamicIcons'
 import { contactsData } from '../datas/Contacts'
@@ -10,9 +10,9 @@ const Contact = ({ contactSection }) => {
     <StyledContainer ref={contactSection}>
       <StyledTitle>Contacts</StyledTitle>
       <StyledContactContainer>
-        <CustomButton style={{ alignSelf: 'center', marginBottom: '1rem' }}>
+        {/* <CustomButton style={{ alignSelf: 'center', marginBottom: '1rem' }}>
           Contact
-        </CustomButton>
+        </CustomButton> */}
         <StyledIconContainer>
           {contactsData.map((data, index) => (
             <StyledIcon key={index}>
